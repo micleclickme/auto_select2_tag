@@ -40,7 +40,7 @@ module AutoSelect2Tag
           )
       }
       hidden_field_options = hidden_field_system_options.merge(options)
-      hidden_field_tag(name, value, hidden_field_options)
+      text_field_tag(name, value, hidden_field_options)
     end
 
     def select2_data_tag(name, value = nil, options={})
@@ -61,7 +61,7 @@ module AutoSelect2Tag
           )
       }
       hidden_field_options = hidden_field_system_options.merge(options)
-      hidden_field_tag(name, value, hidden_field_options)
+      text_field_tag(name, value, hidden_field_options)
     end
   end
 end
